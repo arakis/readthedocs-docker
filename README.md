@@ -1,9 +1,10 @@
 ##### What is ReadTheDocs?
-Please read check https://readthedocs.org/
+Please visit https://readthedocs.org/
 
 ##### Why this image?
 
-readthedocs.org itself privides a build docker image, bot it's not a ready to use image for production.
+readthedocs.org itself privides a build docker image, but it's not a ready to use image for production.
+
 I provide an image that works out of the box.
 It's unmodificated as much as possible.
 
