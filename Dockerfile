@@ -18,7 +18,8 @@ RUN mkdir /data \
 USER docs
 WORKDIR /home/docs
 
-RUN git clone -b '3.5.3' --single-branch https://github.com/rtfd/readthedocs.org.git
+#RUN git clone -b '3.5.3' --single-branch https://github.com/rtfd/readthedocs.org.git
+RUN git clone https://github.com/rtfd/readthedocs.org.git
 WORKDIR /home/docs/readthedocs.org
 RUN $PIP install -r requirements.txt                    \
     && pip3.6 install sphinxcontrib-svg2pdfconverter    \
