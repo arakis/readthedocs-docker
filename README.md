@@ -11,7 +11,7 @@ It's unmodificated as much as possible.
 ##### Run the docker image
 
 ```
-docker run -it -v /tmp/rtd:/data  -p 8000:8000 -e RTD_PRODUCTION_DOMAIN="localhost:8000" arakis/readthedocs-docker
+docker run -it -v /tmp/rtd:/data  -p 8000:8000 -e RTD_PRODUCTION_DOMAIN="localhost:8000" seblon/readthedocs-docker
 ```
 You can change `RTD_PRODUCTION_DOMAIN` to another valid address.
 Change `/tmp/rtd` to an valid location and ensure it's owned by `1005:205`. It will hold the database an the generated assets. You cou can skip the volume, if you wish only a temporary run.
