@@ -19,7 +19,7 @@ USER docs
 WORKDIR /home/docs
 
 #RUN git clone -b '3.5.3' --single-branch https://github.com/rtfd/readthedocs.org.git
-RUN git clone https://github.com/rtfd/readthedocs.org.git
+RUN git clone https://github.com/readthedocs/readthedocs.org.git
 WORKDIR /home/docs/readthedocs.org
 RUN git checkout 3.12.0
 RUN $PIP install -r requirements.txt                    \
